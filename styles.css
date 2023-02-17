@@ -100,6 +100,11 @@ h1, h2 {
 
 /* For Mobile devices */
 @media (max-width: 800px) {
+    /* header */
+    #navbar ul {
+        justify-content: center;
+    }
+
     /* welcome-section */
     #about-container {
         display: flex;
@@ -117,10 +122,6 @@ h1, h2 {
 }
 
 @media (max-width: 600px) {
- /* header */
-    #navbar ul {
-        justify-content: center;
-    }
 /* welcome-section */
     #avatar {
         margin-top: 0;
