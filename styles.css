@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +7,11 @@
 }
 
 body {
-    width: 100vw;
-    overflow: hidden;
-    font-size: 10px;
-    font-family: 'Poppins', sans-serif;
-    /* color: white; */
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
 }
 /* Navegation bar init */
 #navbar {
@@ -18,7 +20,6 @@ body {
     top: 0;
     width: 100vw;
     height: 50px;
-    font-size: 1.2rem;
 }
 
 #navbar ul {
@@ -30,7 +31,7 @@ body {
 }
 
 #navbar ul li {
-    padding: 14px 20px;
+    padding: 16px 20px;
 }
 
 #navbar ul li:hover {
@@ -44,8 +45,86 @@ ul li, ul li a {
 }
 /* Navagation bar end */
 
+main {
+    margin-top: 50px;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    justify-content: center;
+}
+
+#about-container {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 86px;
+}
+
+#avatar {
+    height: 300px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid mediumslateblue;
+}
+
+.desc {
+    max-width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.desc h1 {
+    text-align: start;
+    margin-bottom: 8px;
+    color: mediumslateblue;
+}
+
+.desc p:first-of-type {
+    margin-bottom: 2rem;
+}
+
+/* For Mobile devices */
+@media (max-width: 800px) {
+    /* welcome-section */
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        margin: 32px;
+    }
+
+    #avatar {
+        margin-top: 64px;
+    }
+    
+    #desc-header, p:first-of-type {
+        text-align: center;
+    }
+}
+
 @media (max-width: 600px) {
+ /* header */
     #navbar ul {
         justify-content: center;
+    }
+/* welcome-section */
+    #avatar {
+        margin-top: 0;
+        margin-bottom: -2rem;
+        height: 240px;
     }
 }
