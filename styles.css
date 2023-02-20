@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 
+:root {
+    --main-purple: #7D5BA6;
+} 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body {
@@ -13,9 +18,9 @@ body {
     color: white;
     scroll-behavior: smooth;
 }
-/* Navegation bar init */
+/* Navegation bar */
 #navbar {
-    background-color: #7D5BA6;
+    background-color: var(--main-purple);
     position: fixed;
     top: 0;
     width: 100vw;
@@ -43,7 +48,6 @@ ul li, ul li a {
     text-decoration: none;
     color: white;
 }
-/* Navagation bar end */
 
 main {
     margin-top: 50px;
@@ -55,6 +59,7 @@ h1, h2 {
     font-size: 2rem;
 }
 
+/* #welcome-section */
 #welcome-section {
     height: 100vh;
     background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
@@ -75,7 +80,7 @@ h1, h2 {
     height: 300px;
     border-radius: 50%;
     padding: 10px;
-    border: 3px solid mediumslateblue;
+    border: 3px solid var(--main-purple);
 }
 
 .desc {
@@ -91,11 +96,79 @@ h1, h2 {
 .desc h1 {
     text-align: start;
     margin-bottom: 8px;
-    color: mediumslateblue;
+    color: var(--main-purple);
 }
 
 .desc p:first-of-type {
     margin-bottom: 2rem;
+}
+
+#projects {
+    background-color: #45567d;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projects-header {
+    margin: auto;
+    max-width: 640px;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    /* width: 100%; */
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.project img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #303841;
+    border-radius: 2px;
+} 
+
+.project-title {
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-show-all {
+    font-size: 20px;
+    margin: 0 auto;
+    background: #303841;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+}
+
+.btn-show-all:hover {
+    background-color: var(--main-purple);
+}
+
+.btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
 }
 
 /* For Mobile devices */
