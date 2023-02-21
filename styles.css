@@ -290,7 +290,8 @@ footer p a {
     }
     
     #about-container {
-        margin: 6rem 1rem;
+        padding: 4rem 1rem;
+        margin: 0;
         font-size: 14px;
     }
 
