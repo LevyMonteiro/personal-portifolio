@@ -78,7 +78,7 @@ h1, h2 {
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    margin: 0 86px;
+    margin: 4rem 5rem;
 }
 
 #avatar {
@@ -260,11 +260,7 @@ footer p a {
     #about-container {
         display: flex;
         flex-direction: column;
-        margin: 32px;
-    }
-
-    #avatar {
-        margin-top: 64px;
+        margin: 4rem 2rem;
     }
     
     #desc-header, p:first-of-type {
@@ -289,13 +285,17 @@ footer p a {
 @media (max-width: 600px) {
     /* welcome-section */
     #avatar {
-        margin-top: 0;
         margin-bottom: -2rem;
         height: 240px;
     }
     
     #about-container {
-        margin: 0.5rem 1rem;
+        margin: 4rem 1rem;
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
     }
 
     /* projects */
