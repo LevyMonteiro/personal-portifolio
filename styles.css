@@ -285,7 +285,7 @@ footer p a {
 @media (max-width: 600px) {
     /* welcome-section */
     #avatar {
-        padding-top: 4rem;
+        margin-top: 4rem;
         margin-bottom: -1.5rem;
         height: 210px;
     }
