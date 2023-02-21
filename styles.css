@@ -285,13 +285,13 @@ footer p a {
 @media (max-width: 600px) {
     /* welcome-section */
     #avatar {
-        margin-bottom: -1rem;
+        padding-top: 4rem;
+        margin-bottom: -1.5rem;
         height: 210px;
     }
     
     #about-container {
-        padding: 4rem 1rem;
-        margin: 0;
+        margin: 0rem 1rem;
         font-size: 14px;
     }
 
