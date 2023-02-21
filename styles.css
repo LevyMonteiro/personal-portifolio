@@ -48,7 +48,7 @@ body {
     background-color: #453643;
 }
 
-ul li, ul li a {
+li, a {
     list-style-type: none;
     text-decoration: none;
     color: white;
@@ -222,6 +222,21 @@ h1, h2 {
   transform: translateY(8px);
 }
 
+footer {
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-purple);
+}
+
+footer p {
+    padding: 1.5rem;
+    text-align: right;
+    opacity: 0.8;
+}
+
+footer p a {
+    text-decoration: underline;
+}
+
 /* For Mobile devices */
 @media (max-width: 1200px) {
     /* projects section */
@@ -299,5 +314,9 @@ h1, h2 {
 
     #contact-links li {
         font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 12px;
     }
 }
