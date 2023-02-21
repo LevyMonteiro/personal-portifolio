@@ -2,6 +2,7 @@
 
 :root {
     --main-purple: #7D5BA6;
+    --main-gray: #303841
 } 
 
 * {
@@ -122,7 +123,6 @@ h1, h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
-    /* width: 100%; */
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 4rem;
@@ -137,7 +137,7 @@ h1, h2 {
     text-align: center;
     text-decoration: none;
     color: white;
-    background-color: #303841;
+    background-color: var(--main-gray);
     border-radius: 2px;
 } 
 
@@ -156,22 +156,32 @@ h1, h2 {
 .btn-show-all {
     font-size: 20px;
     margin: 0 auto;
-    background: #303841;
+    background: var(--main-gray);
     transition: 0.3s ease-out;
     text-decoration: none;
 }
 
 .btn-show-all:hover {
-    background-color: var(--main-purple);
+    background-color: var(--main-purple); 
 }
 
+.btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  
 .btn-show-all > i {
-    margin-left: 10px;
-    transform: translateX(0);
-    transition: transform 0.3s ease-out;
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
 }
 
 /* For Mobile devices */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
+}
+
 @media (max-width: 800px) {
     /* header */
     #navbar ul {
@@ -192,6 +202,10 @@ h1, h2 {
     #desc-header, p:first-of-type {
         text-align: center;
     }
+
+    .projects-grid {
+        grid-template-columns: repeat(1, minmax(320px, 1fr));
+    }
 }
 
 @media (max-width: 600px) {
@@ -200,5 +214,9 @@ h1, h2 {
         margin-top: 0;
         margin-bottom: -2rem;
         height: 240px;
+    }
+
+    #projects {
+        padding: 6rem 1rem;
     }
 }
