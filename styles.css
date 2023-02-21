@@ -260,7 +260,7 @@ footer p a {
     #about-container {
         display: flex;
         flex-direction: column;
-        margin: 4rem 2rem;
+        margin: 6rem 2rem;
     }
     
     #desc-header, p:first-of-type {
@@ -290,7 +290,7 @@ footer p a {
     }
     
     #about-container {
-        margin: 4rem 1rem;
+        margin: 6rem 1rem;
         font-size: 14px;
     }
 
